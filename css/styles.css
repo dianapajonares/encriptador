@@ -1,0 +1,255 @@
+* {
+
+    background: #F3F5FC;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: #0A3871;
+    /*overflow-y: hidden;*/
+
+}
+
+.header {
+    width: 90%;
+    margin: auto;
+}
+
+.logo {
+    padding-top: 10px;
+    margin-left: 40px;
+    width: 1.5%;
+
+}
+
+main {
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 180px;
+}
+
+.text-area {
+    height: 300px;
+    border: none;
+    color: #0A3871;
+    margin-top: 80px;
+    text-transform: lowercase;
+}
+
+::placeholder {
+    color: #0A3871;
+}
+
+.text-area:focus {
+    outline: none;
+}
+
+
+
+.encriptado  .mensaje{
+    
+    height: 84%;
+    width: 90%;
+    padding: 5% 5%;
+    background: transparent;
+    background-image: url("img/Muneco.png");
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: 50% 40%;
+    border: none;
+    color: #0A3871;
+    border-radius: 32px;
+    position: absolute;
+  
+  
+    /*margin-top: 20px;
+    padding-left: 20px;*/
+  
+}
+
+.mensaje:focus {
+    outline: none;
+    background: #FFFFFF;
+    z-index: 100;
+
+}
+
+
+
+
+
+
+.botones {
+    /*Posiciona botones uno a lado de otro*/
+    display: flex;
+    top: 87%;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1% 0;
+    position: absolute;
+    width: 80%;
+    left: 12%;
+
+
+}
+
+.btn-desencriptar {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 25%;
+    background-color: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: #0A3871;
+    cursor: pointer;
+    margin-left: 5%;
+}
+
+.btn-encriptar {
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 25%;
+    border: 1px solid #0A3871;
+    background: #0A3871;
+    color: #FFFFFF;
+    border-radius: 24px;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 19px;
+}
+
+.btn-copiar {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+padding: 4.5%;
+gap: 8px;
+position: absolute;
+width: 95%;
+left: 2%;
+top: 90%;
+font-size: 18px; 
+cursor: pointer;
+display:none;
+
+/* Dark blue/dark-blue-300 */
+background-color: #FFFFFF;
+border: 1px solid #0A3871;
+border-radius: 24px;
+
+}
+
+.btn-desencriptar:hover,
+.btn-encriptar:hover {
+    opacity: 0.9;
+}
+
+.btn-copiar:hover{
+    background-color: #0A3871;
+    color: #FFFFFF;
+}
+
+.terminos {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    gap: 8px;
+    position: absolute;
+    width: 80%;
+    left: 12%;
+    top: 80%;
+    font-size: 14px;
+}
+.encriptado {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 25%;
+    height: 94%;
+    left: 60%;
+    top: 5%;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+.encriptado img{
+    box-sizing: border-box;
+    position: absolute;
+    width: 80%;
+    height: 50%;
+    left: 0%;
+    top: 15%;
+    background-color: #FFFFFF;
+}
+.mensaje-encriptado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    top: 63%;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+.mensaje-encriptado h2 {
+    width: 60%;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #343A40;
+    background-color: #FFFFFF;
+
+}
+
+.mensaje-encriptado p {
+    width: 80%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+    flex: none;
+    order: 1;
+    gap:0;
+    flex-grow: 0;
+    background-color: #FFFFFF;
+}
+
+@media (max-width: 50em) {
+    .encriptado  .mensaje{
+    
+        height: 34%;
+        width: 40%;
+        padding: 5% 5%;
+        background: transparent;
+        background-image: url("/img/Muneco.png");
+        background-size: 20%;
+        background-repeat: no-repeat;
+        background-position: 50% 40%;
+        border: none;
+        color: #0A3871;
+        border-radius: 32px;
+        position: absolute;
+      
+      
+        /*margin-top: 20px;
+        padding-left: 20px;*/
+      
+    }
+}
